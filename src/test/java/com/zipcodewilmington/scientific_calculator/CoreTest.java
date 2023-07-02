@@ -1,5 +1,6 @@
 package com.zipcodewilmington.scientific_calculator;
 
+import com.zipcodewilmington.scientificcalculator.Calculator;
 import com.zipcodewilmington.scientificcalculator.MainApplication;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,15 +12,15 @@ public class CoreTest {
 
         //Given, this is the expected behavior
         //change variables to names of group's methods
-        int x = 2;
-        int y = 4;
+        double x = 2;
+        double y = 4;
 
-        int expectedSum = x + y;
+        double expectedSum = x + y;
 
         //When
         //calling groups class and method to store the value of the actual method
         //
-        int actual = MainApplication.add(4,2);
+        double actual = Calculator.addTwoNums(4,2);
 
         //Then
         Assert.assertEquals(expectedSum, actual);
