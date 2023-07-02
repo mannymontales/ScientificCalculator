@@ -14,4 +14,11 @@ public class MainApplication {
         Console.println("The user input %s as a integer", i);
         Console.println("The user input %s as a d", d);
     }
+    /*
+    public static int add(int x, int y){
+        int result = x + y;
+        return result;
+    }
+
+     */
 }
