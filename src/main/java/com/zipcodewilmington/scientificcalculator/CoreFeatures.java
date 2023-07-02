@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CoreFeatures {
     public static void main(String[] args) {
+        /*
         Console.println("Welcome to Halictidae Calculator!");
         Console.println("I'm here to help!");
 
@@ -17,14 +18,20 @@ public class CoreFeatures {
 //        Console.println("The user input %s as a integer", i);
 //        Console.println("The user input %s as a d", d);
 
+        int result = 1;
+        /*
+        Console.println("Welcome to Halictidae Calculator!");
+        Console.println("I'm here to help!");
+        int numberOne = Console.getIntegerInput("Enter the first number: ");
+        int numberTwo = Console.getIntegerInput("Enter the Second number: ");
+        String chooseOperation = Console.getStringInput("What operation?\n" +
+                "( + ) ( - ) ( * ) ( / ) ( ^ ) ( sqr ) ( sqrt )\n");*/
 
-        int numberOne;
-        int numberTwo;
-        int result = 0;
         //initialized variable result
-        Scanner scanObject = new Scanner(System.in);
+        //Scanner scanObject = new Scanner(System.in);
 
 
+        /*
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter first number:");
         //enter first number
@@ -35,16 +42,16 @@ public class CoreFeatures {
         String operator = scanObject.next();
         System.out.println("Enter second number");
         //enter second number
-        numberTwo = scan.nextInt();
+        numberTwo = scan.nextInt(); */
 
 
-
-        System.out.println(result);
+        //System.out.println(result);
         //results printed
 
-        switch (operator) {
+        /*
+        switch (chooseOperation) {
             case "+":
-                result = numberOne + numberTwo;
+                result = number one + number two;
                 break;
             case "-":
                 result = numberOne - numberTwo;
@@ -61,13 +68,16 @@ public class CoreFeatures {
             case "sqrt":
                 result = (int) Math.sqrt(numberOne);
                 break;
+
         //switch statement - block of code executed when switch value matches operation chosen
         }
-        System.out.println(numberOne + " " + operator + " " + numberTwo + " = " + result);
+        //System.out.println(numberOne + " " + chooseOperation + " " + numberTwo + " = " + result);
         // Example: 10 + 5 = 15 (different operations can be chosen)
     }
-}
 
+         */
+    }
+}
 
 
 
