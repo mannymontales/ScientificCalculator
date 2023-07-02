@@ -66,7 +66,7 @@ public class Science {
         Console.println("sin(" + invNatLog + ") = " + invNatLogValue);
         return invNatLogValue;
     }
-
+    
     public static double factorial(double fact) {
         double total = 1;
         for (int i = 0; 0 < fact; i++){
@@ -79,6 +79,14 @@ public class Science {
         Console.println("The factorial is: " + total);
         return total;
     }
+    public static int fact (int fact) {
+        for (int i = 1;i <= fact; i++) {
+            fact = fact * i;
+        }
+        int factValue = fact;
+        return factValue;
+    }
+
     public static void switchUnitsMode () {
         String s = Console.getStringInput("Please enter Degrees or Radians: ");
         if (s.equals("Degrees")) {
