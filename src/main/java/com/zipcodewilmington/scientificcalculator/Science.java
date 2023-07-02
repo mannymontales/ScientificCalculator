@@ -98,6 +98,14 @@ public class Science {
         return invNatLogValue;
     }
 
+    public static int fact (int fact) {
+        for (int i = 1;i <= fact; i++) {
+            fact = fact * i;
+        }
+        int factValue = fact;
+        return factValue;
+    }
+
     public static void switchUnitsMode () {
         String s = Console.getStringInput("Please enter Degrees or Radians: ");
         if (s.equals("Degrees")) {
