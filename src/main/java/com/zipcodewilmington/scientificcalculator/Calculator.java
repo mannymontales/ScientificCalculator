@@ -20,48 +20,74 @@ public class Calculator {
             this.display = number;
         }
 
-        public void add(double number) {
-            this.display += number;
+        public static double addTwoNums(double x, double y) {
+            double sum = x + y;
+            Console.print("The sum of " + x + " and " + y + " is " + String.valueOf(sum));
+            return sum;
         }
 
-        public void subtract(double number) {
-            this.display -= number;
+        public static double subtractTwoNums(double x, double y) {
+            double difference = x - y;
+            Console.print("The difference of " + x + " and " + y + " is " + String.valueOf(difference));
+            return difference;
         }
 
-        public void multiply(double number) {
-            this.display *= number;
+        public static double multiplyTwoNums(double x, double y) {
+            double product = x * y;
+            Console.print("The product of " + x + " and " + y + " is " + String.valueOf(product));
+            return product;
         }
 
-        public void divide(double number) {
-            if (number != 0) {
-                this.display /= number;
-            } else {
-                this.display = Double.NaN; // Set display to NaN for division by zero error
+        public static double divide(double x, double y) {
+            double quotient = 0;
+            if (y != 0) {
+                quotient = x /y;
+                } else {
+                //this.display = Double.NaN; // Set display to NaN for division by zero error
             }
+            Console.print("The quotient of " + x + " / " + y + " is " + String.valueOf(quotient));
+            return quotient;
         }
 
-        public void square() {
-            this.display = Math.pow(this.display, 2);
+        public static double square(double x) {
+            double squared = (x * x);
+            Console.print(x + " :Squared is  " + String.valueOf(squared));
+            return squared;
         }
 
-        public void squareRoot() {
-            this.display = Math.sqrt(this.display);
+        public static double  squareRoot(double x) {
+            double squareRoot =  Math.sqrt(x);
+            Console.print( "The square root of: " + x + " is " + String.valueOf(squareRoot));
+            return squareRoot;
         }
 
-        public void exponentiation(double number) {
-            this.display = Math.pow(this.display, number);
+        public static double exponentiation(double x, double y) {
+            double total =  Math.pow(x , y);
+
+            Console.print(x + " raised to the power of " + y + " is " + total );
+            return total;
         }
 
         public void inverse() {
             if (this.display != 0) {
                 this.display = 1 / this.display;
             } else {
-                this.display = Double.NaN; // Set display to NaN for division by zero error
+                //this.display = Double.NaN; // Set display to NaN for division by zero error
+
             }
         }
 
-        public void invertSign() {
-            this.display = -this.display;
+        public static double invertSign(double x) {
+            double newNum = 0;
+            if (x < 0 ){
+                //x is less than in this scenario
+                newNum = (x * -1);
+            } else {
+                newNum = -x;
+
+            }
+            Console.print("This number with it's sign inverted is: " + newNum);
+            return newNum;
         }
 
         public void clearError() {
@@ -69,29 +95,6 @@ public class Calculator {
                 this.display = 0;
             }
         }
-
-        public static void main(String[] args) {
-            Calculator calculator = new Calculator();
-            System.out.println(calculator.getDisplay());  // Output: 0.0
-
-            calculator.setDisplay(5);
-            System.out.println(calculator.getDisplay());  // Output: 5.0
-
-            calculator.add(3);
-            System.out.println(calculator.getDisplay());  // Output: 8.0
-
-            calculator.square();
-            System.out.println(calculator.getDisplay());  // Output: 64.0
-
-            calculator.squareRoot();
-            System.out.println(calculator.getDisplay());  // Output: 8.0
-
-            calculator.divide(0);
-            System.out.println(calculator.getDisplay());  // Output: NaN
-
-            calculator.clearError();
-            System.out.println(calculator.getDisplay());  // Output: 0.0
-        }
-    }
+}
 
 
