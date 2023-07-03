@@ -187,16 +187,25 @@ public class ScientificTest {
         Assert.assertEquals(expected, actual, 0.001);
     }
 
+    @Test
     public void factorialTest1() {
         //Given, this is the expected behavior
         //change variables to names of group's methods
-        double x = 60;
-        double expected = Math.acos(x);
+        double storedNum = 5;
+        double x = storedNum;
+        double expected = 120;
+        double total = 1;
+        for (int i = 0; 0 < x; i++){
 
+            // add N to the total sum of the number
+            total *= x;//3
+            x -= 1;
+            //have total increment with i till its less than n
+        }
         //When
         //calling groups class and method to store the value of the actual method
         //
-        double actual = Science.aCos(x);
+        double actual = Science.factorial(storedNum);
 
         //Then
         Assert.assertEquals(expected, actual, 0.001);
